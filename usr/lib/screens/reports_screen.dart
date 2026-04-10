@@ -115,7 +115,7 @@ class _ReportsScreenState extends State<ReportsScreen> {
                       child: SfCartesianChart(
                         primaryXAxis: CategoryAxis(),
                         primaryYAxis: NumericAxis(labelFormat: '{value} TZS'),
-                        series: <ChartSeries>[
+                        series: <CartesianSeries>[
                           ColumnSeries<ChartData, String>(
                             dataSource: monthlyCostData,
                             xValueMapper: (ChartData data, _) => data.x,
@@ -152,7 +152,7 @@ class _ReportsScreenState extends State<ReportsScreen> {
                       child: SfCartesianChart(
                         primaryXAxis: CategoryAxis(),
                         primaryYAxis: NumericAxis(),
-                        series: <ChartSeries>[
+                        series: <CartesianSeries>[
                           BarSeries<ChartData, String>(
                             dataSource: usageFrequencyData,
                             xValueMapper: (ChartData data, _) => data.x,
